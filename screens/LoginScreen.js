@@ -31,8 +31,8 @@ export default function LoginScreen() {
       <View style={styles.buttonContainer}>
         <TouchableOpacity style={styles.button}>
           <Text style={styles.buttonText}>Giriş Yap</Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={[styles.button, styles.outlineButton]}>
+        </TouchableOpacity >
+        <TouchableOpacity onPress={handleSignUp} style={[styles.button, styles.outlineButton]}>
           <Text style={styles.outlineButtonText}>Kayıt Ol</Text>
         </TouchableOpacity>
       </View>
