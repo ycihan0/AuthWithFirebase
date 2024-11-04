@@ -35,7 +35,7 @@ export default function LoginScreen() {
 
   const handleLogin = () => {
     auth
-      .signInAnonymously(email, password)
+      .signInWithEmailAndPassword(email, password)
       .then((userCredentials) => {
         const user = userCredentials.user;
         console.log("kullanıcı giriş yaptı", user.email);
